@@ -1,6 +1,6 @@
 colors= {
-    greens = 3,
-    red = 2
+    greens = #008751,
+    red = #FF004D
     }
     ballx=64
     bally=64
