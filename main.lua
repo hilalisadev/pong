@@ -25,6 +25,7 @@ colors= {
         end
     end
     
+    
     function _draw()
         rectfill(0,0,128,128,3)
         print(score, 12,6,15)
@@ -51,12 +52,13 @@ colors= {
     padh = 4
     
     function moveball()
-        ballx += ballxdir
-        bally += ballydir
+        ballx += ballxdir /2
+        bally += ballydir /2
     end
     
     function _update()
         movepaddle()
+        
         moveball()
         bounceball()
         bouncepaddle()
