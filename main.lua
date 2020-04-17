@@ -41,27 +41,28 @@ end
 function _update()
     movepaddle()
     moveball()
+    bounceball()
 end
 
 function bounceball()
     if ballx < ballsize then
         ballxdir =- ballxdir
-        sfx(0)
+        sfx(6)
     end
 
     if ballx > 128 - ballsize then 
         ballxdir =- ballxdir
-        sfx(0)
+        sfx(6)
     end
     if bally < ballsize then 
         ballydir =- ballydir
-        sfx(0)
+        sfx(6)
     end
 end
 
 function bouncepaddle()
     if ballx >= padx and ballx <= padx + padw and bally > pady then
-        sfx(0)
+        sfx(6)
         ballydir =- ballydir
     end
 end
